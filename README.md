@@ -11,4 +11,9 @@ git submodule init
 git submodule update
 ```
 
+If you need to have the npm modules installed locally, you should execute
+```
+npm install
+```
+
 And you should be good to go.
