@@ -1,7 +1,14 @@
 #!/bin/bash
-ln -s ./revealjs/Gruntfile.js ./Gruntfile.js
-ln -s ./revealjs/package.json ./package.json
-cp ./revealjs/index.html ./index.html
+
+if [[ "$(uname -s)" =~ "MINGW32_NT" ]] || [[ "$(uname -s)" =~ "CYGWIN_NT" ]]; then
+    cp -f ./revealjs/Gruntfile.js ./Gruntfile.js
+    cp -f ./revealjs/package.json ./package.json
+else
+    ln -nsf ./revealjs/Gruntfile.js ./Gruntfile.js
+    ln -nsf ./revealjs/package.json ./package.json
+fi
+
+cp -f ./revealjs/index.html ./index.html
 sed -i '' 's/"css\//"revealjs\/css\//g' index.html
 sed -i '' 's/"lib\/css/"revealjs\/lib\/css\//g' index.html
 sed -i '' "s/'css\/print/'revaljs\/css\/print/g" index.html
