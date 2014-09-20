@@ -12,6 +12,13 @@ git submodule update
 
 This will get the latest version of the revealjs
 
+You should then execute
+```
+sh ./setup.sh
+```
+Which will copy over fresh versions of index.html and Gruntfile.js,
+and will modify the index.html to use the revealjs prefix for paths for css and such.
+
 If you need to have the npm modules installed locally, you should execute
 ```
 npm install
