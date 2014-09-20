@@ -4,6 +4,9 @@ Yet another RevealJS setup, but slightly different.
 I wanted my presentations to be independent of revealjs, so I decided to try
 and setup the revealjs as submodule.
 
+This should work on any linux/osx setup.
+For windows you would need Cygwin installed, and not sure about the slashes on the path.
+
 To use this, first clone this repo, then execute
 ```
 git submodule init
