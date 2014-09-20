@@ -1,5 +1,4 @@
-revealjs-template
-=================
+#revealjs-template
 
 Yet another RevealJS setup, but slightly different.
 I wanted my presentations to be independent of revealjs, so I decided to try
@@ -10,6 +9,8 @@ To use this, first clone this repo, then execute
 git submodule init
 git submodule update
 ```
+
+This will get the latest version of the revealjs
 
 If you need to have the npm modules installed locally, you should execute
 ```
