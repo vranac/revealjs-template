@@ -1,5 +1,5 @@
 #!/bin/bash
-cp ./revealjs/Gruntfile.js ./Gruntfile.js
+ln -s ./revealjs/Gruntfile.js ./Gruntfile.js
 cp ./revealjs/index.html ./index.html
 sed -i '' 's/"css\//"revealjs\/css\//g' index.html
 sed -i '' 's/"lib\/css/"revealjs\/lib\/css\//g' index.html
